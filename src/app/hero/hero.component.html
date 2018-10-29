@@ -1,3 +1,8 @@
-<p>{{hero.id}}</p>
+<!-- <p>{{hero.id}}</p>
 <p>{{hero.name | uppercase}}</p>
-<input [(ngModel)]="hero.name" placeholder="name">
+<input [(ngModel)]="hero.name" placeholder="name"> -->
+<ul class="heros">
+	<li *ngFor="let heros of hero">
+		{{heros.id}}<->{{heros.name}}
+	</li>
+</ul>
